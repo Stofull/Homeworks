@@ -173,31 +173,31 @@ using namespace std;
 //}
 #pragma endregion
 #pragma region Task6
-const int getLength(char* str) {
-	int i = 0;
-	while (str[i] != '\0') {
-		i++;
-	}
-	return i;
-}
-char* mystrrev(char* str)
-{
-	char* tmp = new char[20] {};
-	int length = getLength(str);
-	int index = length - 1;
-	for (size_t i = 0; i < length; i++)
-	{
-		tmp[i] = str[index];
-		index--;
-	}
-	return tmp;
-}
-int main()
-{
-	char* myWord = new char[20] {};
-	cout << "Enter you word: ";
-	cin >> myWord;
-	cout << "Result: " << mystrrev(myWord);
-	return 0;
-}
+//const int getLength(char* str) {
+//	int i = 0;
+//	while (str[i] != '\0') {
+//		i++;
+//	}
+//	return i;
+//}
+//char* mystrrev(char* str)
+//{
+//	char* tmp = new char[20] {};
+//	int length = getLength(str);
+//	int index = length - 1;
+//	for (size_t i = 0; i < length; i++)
+//	{
+//		tmp[i] = str[index];
+//		index--;
+//	}
+//	return tmp;
+//}
+//int main()
+//{
+//	char* myWord = new char[20] {};
+//	cout << "Enter you word: ";
+//	cin >> myWord;
+//	cout << "Result: " << mystrrev(myWord);
+//	return 0;
+//}
 #pragma endregion
