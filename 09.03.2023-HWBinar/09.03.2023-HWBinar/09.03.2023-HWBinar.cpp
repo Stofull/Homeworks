@@ -57,6 +57,9 @@ using namespace std;
 #pragma region Task2
 void right(int str[5][5], int num)
 {
+	if (num <= 0)
+		return;
+
 	int tmp[5][5]{};
 	int k = 0;
 	for (size_t i = 0; i < 5; i++)
@@ -71,7 +74,7 @@ void right(int str[5][5], int num)
 	for (size_t i = 0; i < 5; i++)
 	{
 		k = 0;
-		for (size_t j = 5-num; j < 5; j++)
+		for (size_t j = 5 - num; j < 5; j++)
 		{
 			tmp[i][j] = str[i][k];
 			k++;
@@ -84,6 +87,8 @@ void right(int str[5][5], int num)
 			str[i][j] = tmp[i][j];
 		}
 	}
+	
+	right(str, num - 1);
 }
 int main()
 {
