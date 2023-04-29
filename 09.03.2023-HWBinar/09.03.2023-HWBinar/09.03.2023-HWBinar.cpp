@@ -55,72 +55,213 @@ using namespace std;
 //}
 #pragma endregion
 #pragma region Task2
-void right(int str[5][5], int num)
-{
-	if (num <= 0)
-		return;
-
-	int tmp[5][5]{};
-	int k = 0;
-	for (size_t i = 0; i < 5; i++)
-	{
-		k = 0;
-		for (size_t j = num; j < 5; j++)
-		{
-			tmp[i][k] = str[i][j];
-			k++;
-		}
-	}
-	for (size_t i = 0; i < 5; i++)
-	{
-		k = 0;
-		for (size_t j = 5 - num; j < 5; j++)
-		{
-			tmp[i][j] = str[i][k];
-			k++;
-		}
-	}
-	for (size_t i = 0; i < 5; i++)
-	{
-		for (size_t j = 0; j < 5; j++)
-		{
-			str[i][j] = tmp[i][j];
-		}
-	}
-	
-	right(str, num - 1);
-}
-int main()
-{
-	srand(time(0));
-	int array[5][5]{};
-	for (size_t i = 0; i < 5; i++)
-	{
-		for (size_t j = 0; j < 5; j++)
-		{
-			array[i][j] = 1 + rand() % 30;
-		}
-	}
-	for (size_t i = 0; i < 5; i++)
-	{
-		for (size_t j = 0; j < 5; j++)
-		{
-			cout << array[i][j] << " ";
-		}
-		cout << endl;
-	}
-	int number{};
-	cout << "Enter your number: ";
-	cin >> number;
-	right(array, number);
-	for (size_t i = 0; i < 5; i++)
-	{
-		for (size_t j = 0; j < 5; j++)
-		{
-			cout << array[i][j] << " ";
-		}
-		cout << endl;
-	}
-	return 0;
-}
+//void right(int str[5][5], int num)
+//{
+//	if (num <= 0)
+//		return;
+//
+//	int tmp[5][5]{};
+//	int k = 0;
+//	for (size_t i = 0; i < 5; i++)
+//	{
+//		k = 0;
+//		for (size_t j = num; j < 5; j++)
+//		{
+//			tmp[i][k] = str[i][j];
+//			k++;
+//		}
+//	}
+//	for (size_t i = 0; i < 5; i++)
+//	{
+//		k = 0;
+//		for (size_t j = 5 - num; j < 5; j++)
+//		{
+//			tmp[i][j] = str[i][k];
+//			k++;
+//		}
+//	}
+//	for (size_t i = 0; i < 5; i++)
+//	{
+//		for (size_t j = 0; j < 5; j++)
+//		{
+//			str[i][j] = tmp[i][j];
+//		}
+//	}
+//	
+//	right(str, num - 1);
+//}
+//int main()
+//{
+//	srand(time(0));
+//	int array[5][5]{};
+//	for (size_t i = 0; i < 5; i++)
+//	{
+//		for (size_t j = 0; j < 5; j++)
+//		{
+//			array[i][j] = 1 + rand() % 30;
+//		}
+//	}
+//	for (size_t i = 0; i < 5; i++)
+//	{
+//		for (size_t j = 0; j < 5; j++)
+//		{
+//			cout << array[i][j] << " ";
+//		}
+//		cout << endl;
+//	}
+//	int number{};
+//	cout << "Enter your number: ";
+//	cin >> number;
+//	right(array, number);
+//	for (size_t i = 0; i < 5; i++)
+//	{
+//		for (size_t j = 0; j < 5; j++)
+//		{
+//			cout << array[i][j] << " ";
+//		}
+//		cout << endl;
+//	}
+//	return 0;
+//}
+#pragma endregion
+#pragma region Task3
+//void left(int str[5][5], int num)
+//{
+//    if (num <= 0)
+//        return;
+//
+//    int tmp[5][5]{};
+//    int k = 0;
+//    for (size_t i = 0; i < 5; i++)
+//    {
+//        k = 0;
+//        for (size_t j = num; j < 5; j++)
+//        {
+//            tmp[i][k] = str[i][j];
+//            k++;
+//        }
+//    }
+//    for (size_t i = 0; i < 5; i++)
+//    {
+//        k = 0;
+//        for (size_t j = 0; j < num; j++)
+//        {
+//            tmp[i][5 - num + j] = str[i][j];
+//            k++;
+//        }
+//    }
+//    for (size_t i = 0; i < 5; i++)
+//    {
+//        for (size_t j = 0; j < 5; j++)
+//        {
+//            str[i][j] = tmp[i][j];
+//        }
+//    }
+//
+//    left(str, num - 1);
+//}
+//
+//int main()
+//{
+//	srand(time(0));
+//	int array[5][5]{};
+//	for (size_t i = 0; i < 5; i++)
+//	{
+//		for (size_t j = 0; j < 5; j++)
+//		{
+//			array[i][j] = 1 + rand() % 30;
+//		}
+//	}
+//	for (size_t i = 0; i < 5; i++)
+//	{
+//		for (size_t j = 0; j < 5; j++)
+//		{
+//			cout << array[i][j] << " ";
+//		}
+//		cout << endl;
+//	}
+//	int number{};
+//	cout << "Enter your number: ";
+//	cin >> number;
+//	left(array, number);
+//	for (size_t i = 0; i < 5; i++)
+//	{
+//		for (size_t j = 0; j < 5; j++)
+//		{
+//			cout << array[i][j] << " ";
+//		}
+//		cout << endl;
+//	}
+//	return 0;
+//}
+#pragma endregion
+#pragma region Task4
+//void down(int str[5][5], int num)
+//{
+//	if (num <= 0)
+//		return;
+//
+//	int tmp[5][5]{};
+//	int k = 0;
+//	for (size_t j = 0; j < 5; j++)
+//	{
+//		k = 0;
+//		for (size_t i = 5 - num; i < 5; i++)
+//		{
+//			tmp[k][j] = str[i][j];
+//			k++;
+//		}
+//	}
+//	for (size_t j = 0; j < 5; j++)
+//	{
+//		k = 0;
+//		for (size_t i = 0; i < 5 - num; i++)
+//		{
+//			tmp[k + num][j] = str[i][j];
+//			k++;
+//		}
+//	}
+//	for (size_t i = 0; i < 5; i++)
+//	{
+//		for (size_t j = 0; j < 5; j++)
+//		{
+//			str[i][j] = tmp[i][j];
+//		}
+//	}
+//
+//	down(str, num - 1);
+//}
+//int main()
+//{
+//	srand(time(0));
+//	int array[5][5]{};
+//	for (size_t i = 0; i < 5; i++)
+//	{
+//		for (size_t j = 0; j < 5; j++)
+//		{
+//			array[i][j] = 1 + rand() % 30;
+//		}
+//	}
+//	for (size_t i = 0; i < 5; i++)
+//	{
+//		for (size_t j = 0; j < 5; j++)
+//		{
+//			cout << array[i][j] << " ";
+//		}
+//		cout << endl;
+//	}
+//	int number{};
+//	cout << "Enter your number: ";
+//	cin >> number;
+//	down(array, number);
+//	for (size_t i = 0; i < 5; i++)
+//	{
+//		for (size_t j = 0; j < 5; j++)
+//		{
+//			cout << array[i][j] << " ";
+//		}
+//		cout << endl;
+//	}
+//	return 0;
+//}
 #pragma endregion
