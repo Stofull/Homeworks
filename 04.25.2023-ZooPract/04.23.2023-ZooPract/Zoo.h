@@ -16,7 +16,6 @@ struct Animal
 };
 struct Zoo
 {
-	char* zooName{};
 	uint16_t animalsCount{ 10 };
 	uint16_t animalsInZoo{};
 	Animal* animals = new Animal[animalsCount]{};

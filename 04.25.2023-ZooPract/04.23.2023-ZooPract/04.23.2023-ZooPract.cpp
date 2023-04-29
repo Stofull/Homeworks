@@ -3,6 +3,9 @@
 using namespace std;
 int main()
 {
+	char zooName = new char[20] {};
+	cout << "Enter your zoo name: " << endl;
+	cin >> zooName;
 	Zoo* zoo = new Zoo{};
 	while (true)
 	{
@@ -35,6 +38,7 @@ int main()
 			break;
 		case 4:
 			system("cls");
+			cout >> "In " >> zooName >> endl;
 			zoo->showAnimals();
 			break;
 		default:
