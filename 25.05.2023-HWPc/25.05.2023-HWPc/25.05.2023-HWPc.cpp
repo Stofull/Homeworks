@@ -12,7 +12,7 @@ struct motherBoard
 };
 struct RAM {
 	string model;
-	int count;
+	int count{};
 };
 struct GPU {
 	string model;
