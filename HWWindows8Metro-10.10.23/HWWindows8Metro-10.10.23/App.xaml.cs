@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace _10._10._23_HWWindows8Metro
+namespace HWWindows8Metro_10._10._23
 {
     /// <summary>
     /// Interaction logic for App.xaml

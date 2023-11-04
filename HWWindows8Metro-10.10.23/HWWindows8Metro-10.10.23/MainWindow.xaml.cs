@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _10._10._23_HWWindows8Metro
+namespace HWWindows8Metro_10._10._23
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

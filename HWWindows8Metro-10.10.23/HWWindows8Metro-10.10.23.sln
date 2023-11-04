@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.10.23-HWWindows8Metro", "10.10.23-HWWindows8Metro\10.10.23-HWWindows8Metro.csproj", "{36FA3C75-14A7-4F91-B04F-1DCF5F41B8F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWWindows8Metro-10.10.23", "HWWindows8Metro-10.10.23\HWWindows8Metro-10.10.23.csproj", "{294DEA34-4ABD-47FB-86BB-B1BE28DE8BF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{36FA3C75-14A7-4F91-B04F-1DCF5F41B8F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{36FA3C75-14A7-4F91-B04F-1DCF5F41B8F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{36FA3C75-14A7-4F91-B04F-1DCF5F41B8F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{36FA3C75-14A7-4F91-B04F-1DCF5F41B8F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{294DEA34-4ABD-47FB-86BB-B1BE28DE8BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{294DEA34-4ABD-47FB-86BB-B1BE28DE8BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{294DEA34-4ABD-47FB-86BB-B1BE28DE8BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{294DEA34-4ABD-47FB-86BB-B1BE28DE8BF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E31D90D4-4D15-4B62-B316-A2AD7A1DEFCE}
+		SolutionGuid = {1D23B11A-2E3E-42E7-8FA5-8D691587AAD0}
 	EndGlobalSection
 EndGlobal
