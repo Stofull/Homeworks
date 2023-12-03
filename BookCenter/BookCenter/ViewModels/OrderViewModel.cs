@@ -33,12 +33,21 @@ class OrderViewModel : ViewModelBase
             }
         });
     }
-    public RelayCommand GoBackCommand
-{
-    get => new(
-        () =>
+    public RelayCommand ConfirmBook
+    {
+        get => new RelayCommand(() =>
         {
-            _navigationService.NavigateTo<InfoViewModel>();
-        }
-    );
+            MessageBox.Show("Заказ успешно подтвержден!", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+            _navigationService.NavigateTo<SearchViewModel>();
+        });
+    }
+    public RelayCommand GoBackCommand
+    {
+        get => new(
+            () =>
+            {
+                _navigationService.NavigateTo<InfoViewModel>();
+            }
+        );
+    }
 }

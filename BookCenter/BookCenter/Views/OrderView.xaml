@@ -10,8 +10,9 @@
     <Grid>
         <StackPanel Margin="10">
             <TextBlock Text="Подтверждение заказа" FontWeight="Bold" FontSize="18" Margin="0,0,0,10"/>
-            <TextBlock Text="Вы собираетесь купить следующую книгу:" Margin="0,0,0,5"/>
-            <Button Content="Подтвердить заказ" Width="120"/>
+            <TextBlock Text="Вы собираетесь купить следующую книгу: " Margin="0,0,0,5" />
+            <Label Content="{Binding SelectedBook.Title}" ></Label>
+            <Button Width="120" Command="{Binding ConfirmBook}">Подтвердить</Button>
             <Button Width="120" Command="{Binding GoBackCommand}">Отмена</Button>
         </StackPanel>
     </Grid>
