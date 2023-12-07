@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿FruitShop fruitShop = new FruitShop();
+fruitShop.DisplayFruitInfo("Apple", "Kazakhstan", "Autumn");
+fruitShop.DisplayFruitInfo("Pear", "Australia", "Autumn");
+fruitShop.DisplayFruitInfo("Apple", "Kazakhstan", "Autumn");
