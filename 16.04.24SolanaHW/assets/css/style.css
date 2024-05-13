@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    margin: 0 auto;
+    width: 1000px;
+}
+#hero{
+    background-image: url("/assets/img/bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 50px 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #414146;
+    padding: 15px 20px;
+    align-items: center;
+}
+.nav ul{
+    display: flex;
+    gap: 20px;
+}
+.nav ul a{
+    transition: all .5s ;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+}
+.nav ul a:hover{
+    color: #000;
+    background-color: yellow;
+
+}
+.header-search a{
+    font-size: 20px;
+    color: white;
+    transition: all .5s ;
+    padding: 10px;
+    border-radius: 10px;
+}
+.header-search a:hover{
+    color: #000;
+    background-color: yellow;
+}
+.hero-txt{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15%;
+    gap: 50px;
+}
+.hero-main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.hero-main h1{
+    font-size: 45px;
+    background-color: yellow;
+    width: 50%;
+    padding: 25px;   
+}
+.hero-main span{
+    background-color: #414146;
+    width: 50%;
+    font-size: 23px;
+    padding: 20px;
+    color: #fff;
+}
+.hero-button{
+    display: flex;
+}
+.hero-button p{
+    background-color: #414146;
+    padding: 15px;
+    color: #fff;
+}
+.hero-button a{
+    background-color: yellow;
+    padding: 15px;
+    color: #000;
+    transition: all .5s;
+}
+.hero-button a:hover{
+    background-color: #000;
+    color: #fff;
+}
+#cards{
+    background-color: #e6e6e6;
+}
+.cards-main{
+    display: flex;
+    justify-content: center;
+}
+.card-wh{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 30px;
+    margin: -10px;
+}
+.card-wh-button{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.card-wh-button p{
+    font-size: 15px;
+    background-color: #414146;
+    color: white;
+    padding: 5px;
+}
+.card-wh-button a{
+    color: #000;
+    background-color: yellow;
+    padding: 5px;
+    transition: all .5s;
+}
+.card-wh-button a:hover{
+    background-color: #000;
+    color: #fff;
+}
+.card-ylw{
+    display: flex;
+}
+.card-ylw1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: yellow;
+    padding: 30px;
+    margin: -10px;
+}
+.card-ylw1:nth-child(2){
+    background-color: rgb(228, 228, 9);
+}
+.card-ylw1:nth-child(3){
+    background-color: rgb(222, 222, 26);
+}
+.card-ylw1 a{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #000;
+}
+.card-ylw1 i{
+    font-size: 35px;
+}
