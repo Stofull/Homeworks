@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.antialiased {
+  background: #fff;
+}
+
+.Border {
+  height: 45%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 60px;
+  padding: 100px;
+  padding-top: 50px;
+  background: #c8fbdf;
+  gap: 10px;
+}
+
+.text {
+  display: flex;
+  color: #000;
+  font-size: 50px;
+  line-height: normal;
+  font-weight: 400;
+  text-align: center;
+  flex-direction: column-reverse;
+}
+
+.Bord-El {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.Use-Inf {
+  border-radius: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 2rem;
+  --tw-border-opacity: 1;
+  --tw-shadow: 0 5px 0px -3px rgb(0 0 0 / 0.2), 0 0px 0px -6px rgb(0 0 0 / 0.2);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.Use-Marg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.Use-Butt-Size {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+.Use-Butt {
+  background: #000;
+  width: 100%;
+  border-radius: 12px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.Use-Word {
+  font-weight: 300;
+  font-size: x-large;
+  height: 50px;
+}
