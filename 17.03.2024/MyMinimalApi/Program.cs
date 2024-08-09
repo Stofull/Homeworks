@@ -19,13 +19,11 @@ app.MapGet("/products/{id}", (int id) =>
 
 app.MapPost("/products", (Product product) =>
 {
-    // In a real app, you would save the product to a database
     return Results.Created($"/products/{product.Id}", product);
 });
 
 app.MapDelete("/products/{id}", (int id) =>
 {
-    // In a real app, you would delete the product from a database
     return Results.Ok($"Product with id {id} deleted");
 });
 
